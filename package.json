@@ -4,9 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "vite --config vite.config.mjs --host 127.0.0.1",
-    "start": "vite --config vite.config.mjs --host 127.0.0.1"
+    "start": "vite --config vite.config.mjs --host 127.0.0.1",
+    "build": "node scripts/cms-build.mjs",
+    "test:cms": "node --test scripts/cms.test.mjs"
   },
   "devDependencies": {
+    "cheerio": "^1.2.0",
+    "qrcode-generator": "^2.0.4",
     "vite": "^7.0.0"
   }
 }

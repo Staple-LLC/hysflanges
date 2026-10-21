@@ -1,0 +1,1670 @@
+{
+  "websiteId": "d3727ee2-77cd-4628-86e4-7219ee926193",
+  "origin": "https://hysflanges.vercel.app",
+  "sections": [
+    {
+      "key": "product_categories",
+      "name": "Product categories",
+      "slug": "/shared",
+      "definition": {
+        "title": "Product categories",
+        "websitePath": "/",
+        "fields": [
+          {
+            "key": "items",
+            "label": "Categories",
+            "type": "collection",
+            "fields": [
+              {
+                "key": "id",
+                "label": "ID",
+                "type": "text"
+              },
+              {
+                "key": "title",
+                "label": "Category name",
+                "type": "text",
+                "required": true
+              },
+              {
+                "key": "image",
+                "label": "Image",
+                "type": "image",
+                "required": true
+              },
+              {
+                "key": "imageAlt",
+                "label": "Image description",
+                "type": "text",
+                "required": true
+              },
+              {
+                "key": "productUrl",
+                "label": "Products page URL",
+                "type": "url",
+                "required": true
+              },
+              {
+                "key": "catalogueUrl",
+                "label": "Catalogue page URL",
+                "type": "url",
+                "required": true
+              },
+              {
+                "key": "status",
+                "label": "Publication",
+                "type": "select",
+                "required": true,
+                "options": ["draft", "published"]
+              }
+            ]
+          }
+        ],
+        "editor": {
+          "type": "collection",
+          "field": "items",
+          "titleField": "title",
+          "statusField": "status"
+        }
+      },
+      "content": {
+        "items": [
+          {
+            "id": "26b95fff-6c0a-4bbc-bd7e-76dc4ac00efe",
+            "title": "Flanges",
+            "image": "/cms-assets/2542cd9ffc445d4c.jpg",
+            "imageAlt": "Flanges",
+            "productUrl": "https://hysflanges.vercel.app/our-products/flanges/index.html?v=hs-logo-3",
+            "catalogueUrl": "https://hysflanges.vercel.app/catalogue/flanges/index.html?v=hs-logo-3",
+            "status": "published"
+          },
+          {
+            "id": "cefc7017-4d0c-484c-a5dc-3c04ff55dc68",
+            "title": "Fittings",
+            "image": "/cms-assets/aa420068c7b47f7e.jpg",
+            "imageAlt": "Fittings",
+            "productUrl": "https://hysflanges.vercel.app/our-products/fittings/index.html?v=hs-logo-3",
+            "catalogueUrl": "https://hysflanges.vercel.app/catalogue/fittings/index.html?v=hs-logo-3",
+            "status": "published"
+          }
+        ]
+      }
+    },
+    {
+      "key": "company_details",
+      "name": "Company & contact details",
+      "slug": "/shared",
+      "definition": {
+        "title": "Company & contact details",
+        "websitePath": "/",
+        "fields": [
+          {
+            "key": "manufacturer",
+            "label": "Manufacturer name",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "manufacturerAddress",
+            "label": "Manufacturer address",
+            "type": "longText",
+            "required": true
+          },
+          {
+            "key": "distributor",
+            "label": "Distributor name",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "distributorLabel",
+            "label": "Distributor label",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "distributorAddress",
+            "label": "Distributor address",
+            "type": "longText",
+            "required": true
+          },
+          {
+            "key": "email0",
+            "label": "General enquiries email",
+            "type": "email",
+            "required": true
+          },
+          {
+            "key": "email1",
+            "label": "Sales / form recipient email",
+            "type": "email",
+            "required": true
+          },
+          {
+            "key": "email2",
+            "label": "Distributor email",
+            "type": "email",
+            "required": true
+          },
+          {
+            "key": "phone",
+            "label": "Telephone",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "website",
+            "label": "Distributor website",
+            "type": "url",
+            "required": true
+          },
+          {
+            "key": "fax",
+            "label": "Fax",
+            "type": "text",
+            "required": true
+          }
+        ]
+      },
+      "content": {
+        "manufacturer": "HYS Flanges Co. Ltd",
+        "manufacturerAddress": "Geumsan B/D 3F, 17-1, Yeouido-dong\nYeongdeung po-gu, Seoul, Korea.",
+        "distributor": "HS PIPE FITTINGS SDN. BHD. (719602-D)",
+        "distributorLabel": "Main Distributor",
+        "distributorAddress": "No. 12A, Jalan Trompet 33/8, Seksyen 33\n40400 Shah Alam, Selangor Darul Ehsan, Malaysia.",
+        "email0": "inquiry@huatsiang.com",
+        "email1": "sales@huatsiang.com",
+        "email2": "inquiry@hspipefittings.com",
+        "phone": "+60 3 5192 9328",
+        "website": "https://www.hspipefittings.com",
+        "fax": "+60 3 5192 1898"
+      }
+    },
+    {
+      "key": "home",
+      "name": "Homepage",
+      "slug": "/",
+      "definition": {
+        "title": "Homepage",
+        "websitePath": "/",
+        "fields": [
+          {
+            "key": "seo",
+            "label": "Search engine details",
+            "type": "group",
+            "fields": [
+              {
+                "key": "title",
+                "label": "Page title",
+                "type": "text"
+              },
+              {
+                "key": "description",
+                "label": "Search description",
+                "type": "longText"
+              }
+            ]
+          },
+          {
+            "key": "headings",
+            "label": "Headings",
+            "type": "group",
+            "fields": [
+              {
+                "key": "item1",
+                "label": "HYS Flanges Co. Ltd",
+                "type": "text"
+              },
+              {
+                "key": "item2",
+                "label": "HYS Flanges Co. Ltd specializes in producing flanges and fitti\u2026",
+                "type": "text"
+              },
+              {
+                "key": "item3",
+                "label": "Mission & Vision",
+                "type": "text"
+              },
+              {
+                "key": "item4",
+                "label": "At HYS Flanges Co. Ltd, our commitment to high-quality service\u2026",
+                "type": "text"
+              },
+              {
+                "key": "item5",
+                "label": "Our Products",
+                "type": "text"
+              },
+              {
+                "key": "item6",
+                "label": "We Specialize In:\nFlanges & Fittings",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "key": "buttons",
+            "label": "Button labels",
+            "type": "group",
+            "fields": [
+              {
+                "key": "button1",
+                "label": "READ MORE",
+                "type": "text"
+              },
+              {
+                "key": "button2",
+                "label": "See More",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "key": "heroSlides",
+            "label": "Hero slideshow",
+            "type": "collection",
+            "fields": [
+              {
+                "key": "image",
+                "label": "Image",
+                "type": "image",
+                "required": true
+              },
+              {
+                "key": "imageAlt",
+                "label": "Image description",
+                "type": "text",
+                "required": true
+              }
+            ]
+          }
+        ]
+      },
+      "content": {
+        "seo": {
+          "title": "Home - HYS FLANGES CO. LTD",
+          "description": "HYS Flanges Co. Ltd specializes in producing high-quality flanges and fittings for industrial applications worldwide."
+        },
+        "headings": {
+          "item1": "HYS Flanges Co. Ltd",
+          "item2": "HYS Flanges Co. Ltd specializes in producing flanges and fittings for all types of applications. Our products serve oil and gas, refining, power generation, construction, shipbuilding, offshore engineering, machinery, chemical processing, palm oil, biodiesel, and other industries worldwide.",
+          "item3": "Mission & Vision",
+          "item4": "At HYS Flanges Co. Ltd, our commitment to high-quality service, flanges, and fittings guides every business strategy and goal. We continually improve our services and expand our product range to serve customers more effectively.",
+          "item5": "Our Products",
+          "item6": "We Specialize In:\nFlanges & Fittings"
+        },
+        "buttons": {
+          "button1": "READ MORE",
+          "button2": "See More"
+        },
+        "heroSlides": [
+          {
+            "image": "/cms-assets/f315f32ad8b2d83f.jpg",
+            "imageAlt": "HYS Flanges slideshow image 1"
+          },
+          {
+            "image": "/cms-assets/7c6555d8554af9d9.jpg",
+            "imageAlt": "HYS Flanges slideshow image 2"
+          },
+          {
+            "image": "/cms-assets/2542cd9ffc445d4c.jpg",
+            "imageAlt": "HYS Flanges slideshow image 3"
+          }
+        ]
+      }
+    },
+    {
+      "key": "about",
+      "name": "About us",
+      "slug": "/about-us",
+      "definition": {
+        "title": "About us",
+        "websitePath": "/about-us",
+        "fields": [
+          {
+            "key": "seo",
+            "label": "Search engine details",
+            "type": "group",
+            "fields": [
+              {
+                "key": "title",
+                "label": "Page title",
+                "type": "text"
+              },
+              {
+                "key": "description",
+                "label": "Search description",
+                "type": "longText"
+              }
+            ]
+          },
+          {
+            "key": "headings",
+            "label": "Headings",
+            "type": "group",
+            "fields": [
+              {
+                "key": "item1",
+                "label": "ABOUT US",
+                "type": "text"
+              },
+              {
+                "key": "item2",
+                "label": "Company Profile",
+                "type": "text"
+              },
+              {
+                "key": "item3",
+                "label": "MISSION & VISION",
+                "type": "text"
+              },
+              {
+                "key": "item4",
+                "label": "FLANGES",
+                "type": "text"
+              },
+              {
+                "key": "item5",
+                "label": "Precision flanges for demanding applications",
+                "type": "text"
+              },
+              {
+                "key": "item6",
+                "label": "FORGED FITTINGS",
+                "type": "text"
+              },
+              {
+                "key": "item7",
+                "label": "Forged fittings built for reliable connections",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "key": "copy",
+            "label": "Page text",
+            "type": "group",
+            "fields": [
+              {
+                "key": "item1",
+                "label": "HYS Flanges Co. Ltd specializes in producing flanges and fitti\u2026",
+                "type": "longText"
+              },
+              {
+                "key": "item2",
+                "label": "At HYS Flanges Co. Ltd, our corporate values and commitment to\u2026",
+                "type": "longText"
+              },
+              {
+                "key": "item3",
+                "label": "\u2022 Maintain ready stock of flanges and fittings to support cust\u2026",
+                "type": "longText"
+              },
+              {
+                "key": "item4",
+                "label": "HYS Flanges Co. Ltd manufactures high-quality flanges for oil \u2026",
+                "type": "longText"
+              },
+              {
+                "key": "item5",
+                "label": "Mill test certification is available upon request.",
+                "type": "longText"
+              },
+              {
+                "key": "item6",
+                "label": "HYS Flanges Co. Ltd produces forged fittings for industrial pi\u2026",
+                "type": "longText"
+              }
+            ]
+          },
+          {
+            "key": "images",
+            "label": "Page images",
+            "type": "group",
+            "fields": [
+              {
+                "key": "image1",
+                "label": "About us image 1",
+                "type": "group",
+                "fields": [
+                  {
+                    "key": "image",
+                    "label": "Image",
+                    "type": "image",
+                    "required": true
+                  },
+                  {
+                    "key": "imageAlt",
+                    "label": "Image description",
+                    "type": "text",
+                    "required": true
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "content": {
+        "seo": {
+          "title": "About Us - HYS FLANGES CO. LTD",
+          "description": "HYS Flanges Co. Ltd specializes in producing high-quality flanges and fittings for industrial applications worldwide."
+        },
+        "headings": {
+          "item1": "ABOUT US",
+          "item2": "Company Profile",
+          "item3": "MISSION & VISION",
+          "item4": "FLANGES",
+          "item5": "Precision flanges for demanding applications",
+          "item6": "FORGED FITTINGS",
+          "item7": "Forged fittings built for reliable connections"
+        },
+        "copy": {
+          "item1": "HYS Flanges Co. Ltd specializes in producing flanges and fittings for all types of applications. Our products serve a wide range of industries, including oil and gas pipelines, oil refineries, power generation, construction, shipbuilding and offshore engineering, boilers and heat exchangers, machinery, sanitary systems, instrumentation, chemical and petrochemical plants, palm oil processing, biodiesel production, and more.",
+          "item2": "At HYS Flanges Co. Ltd, our corporate values and commitment to high-quality service, flanges, and fittings guide every business strategy and goal. We continually improve our services and expand our product range to serve our customers more effectively.",
+          "item3": "\u2022 Maintain ready stock of flanges and fittings to support customers and expand our market reach.\n\u2022 Broaden our product range to meet customer requirements and support long-term business growth.\n\u2022 Provide dependable, ongoing support to every customer.\n\u2022 Deliver excellent after-sales service through our experienced sales team.",
+          "item4": "HYS Flanges Co. Ltd manufactures high-quality flanges for oil and gas, refining, power generation, shipbuilding, offshore engineering, chemical processing, and other industrial applications. Our flanges are engineered for reliable connections, long service life, and performance across low- and high-pressure systems.",
+          "item5": "Mill test certification is available upon request.",
+          "item6": "HYS Flanges Co. Ltd produces forged fittings for industrial piping systems, including threaded and socket-weld configurations. Our fittings are manufactured to recognized standards and supplied in a range of sizes and pressure classes to meet project requirements."
+        },
+        "images": {
+          "image1": {
+            "image": "/cms-assets/2824d632225eb84c.jpg",
+            "imageAlt": "About us image 1"
+          }
+        }
+      }
+    },
+    {
+      "key": "products_page",
+      "name": "Products page",
+      "slug": "/our-products",
+      "definition": {
+        "title": "Products page",
+        "websitePath": "/our-products",
+        "fields": [
+          {
+            "key": "seo",
+            "label": "Search engine details",
+            "type": "group",
+            "fields": [
+              {
+                "key": "title",
+                "label": "Page title",
+                "type": "text"
+              },
+              {
+                "key": "description",
+                "label": "Search description",
+                "type": "longText"
+              }
+            ]
+          },
+          {
+            "key": "headings",
+            "label": "Headings",
+            "type": "group",
+            "fields": [
+              {
+                "key": "item1",
+                "label": "OUR PRODUCTS",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "content": {
+        "seo": {
+          "title": "Our Products - HYS FLANGES CO. LTD",
+          "description": "HYS Flanges Co. Ltd specializes in producing high-quality flanges and fittings for industrial applications worldwide."
+        },
+        "headings": {
+          "item1": "OUR PRODUCTS"
+        }
+      }
+    },
+    {
+      "key": "flange_products",
+      "name": "Flange products",
+      "slug": "/our-products/flanges",
+      "definition": {
+        "title": "Flange products",
+        "websitePath": "/our-products/flanges",
+        "fields": [
+          {
+            "key": "seo",
+            "label": "Search engine details",
+            "type": "group",
+            "fields": [
+              {
+                "key": "title",
+                "label": "Page title",
+                "type": "text"
+              },
+              {
+                "key": "description",
+                "label": "Search description",
+                "type": "longText"
+              }
+            ]
+          },
+          {
+            "key": "headings",
+            "label": "Headings",
+            "type": "group",
+            "fields": [
+              {
+                "key": "item1",
+                "label": "Flanges",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "key": "items",
+            "label": "Products",
+            "type": "collection",
+            "fields": [
+              {
+                "key": "id",
+                "label": "ID",
+                "type": "text"
+              },
+              {
+                "key": "title",
+                "label": "Product title",
+                "type": "text",
+                "required": true
+              },
+              {
+                "key": "description",
+                "label": "Description",
+                "type": "longText",
+                "required": true
+              },
+              {
+                "key": "image",
+                "label": "Image",
+                "type": "image",
+                "required": true
+              },
+              {
+                "key": "imageAlt",
+                "label": "Image description",
+                "type": "text",
+                "required": true
+              },
+              {
+                "key": "specifications",
+                "label": "Specifications",
+                "type": "collection",
+                "fields": [
+                  {
+                    "key": "label",
+                    "label": "Specification",
+                    "type": "text",
+                    "required": true
+                  },
+                  {
+                    "key": "value",
+                    "label": "Value",
+                    "type": "text",
+                    "required": true
+                  }
+                ]
+              },
+              {
+                "key": "status",
+                "label": "Publication",
+                "type": "select",
+                "required": true,
+                "options": ["draft", "published"]
+              }
+            ]
+          }
+        ],
+        "editor": {
+          "type": "collection",
+          "field": "items",
+          "titleField": "title",
+          "statusField": "status"
+        }
+      },
+      "content": {
+        "seo": {
+          "title": "Flanges - HYS FLANGES CO. LTD",
+          "description": "HYS Flanges Co. Ltd specializes in producing high-quality flanges and fittings for industrial applications worldwide."
+        },
+        "headings": {
+          "item1": "Flanges"
+        },
+        "items": [
+          {
+            "id": "d9eb52c6-8c82-4c47-b837-180e57671411",
+            "title": "HYS Flanges",
+            "description": "HYS Flanges Co. Ltd produces flanges for a wide range of industrial piping applications. Mill test certification is available as required.",
+            "image": "/cms-assets/150579c8c8133e22.jpg",
+            "imageAlt": "HYS Flanges",
+            "specifications": [
+              {
+                "label": "Product Name",
+                "value": "Flanges"
+              },
+              {
+                "label": "Brand",
+                "value": "HYS Flanges"
+              },
+              {
+                "label": "Standards",
+                "value": "JIS B2220, ANSI B16.5, DIN, BS 4504 and BS 10"
+              },
+              {
+                "label": "Types",
+                "value": "Plate, blind, slip-on, weld neck, threaded and socket weld"
+              }
+            ],
+            "status": "published"
+          },
+          {
+            "id": "0cd4efc7-6684-4bf5-ae10-c9565df45592",
+            "title": "ASME Orifice Flanges",
+            "description": "Orifice flanges are used with orifice meters to measure the flow of liquids or gases in pipelines. Pressure tapping points are machined into the flange, removing the need for separate tapping in the pipe wall.",
+            "image": "/cms-assets/4114020837f692db.jpg",
+            "imageAlt": "ASME Orifice Flanges",
+            "specifications": [
+              {
+                "label": "Product Name",
+                "value": "Orifice Flanges"
+              },
+              {
+                "label": "Application",
+                "value": "Flow measurement in pipelines"
+              }
+            ],
+            "status": "published"
+          },
+          {
+            "id": "f7b978b7-ab0c-41dd-bdbd-da0b907fc1e9",
+            "title": "Spectacle Flanges",
+            "description": "A spectacle flange consists of two metal discs connected by a small section of steel. It is used in piping systems that require regular isolation or interruption of flow.",
+            "image": "/cms-assets/626ead697896695e.jpg",
+            "imageAlt": "Spectacle Flanges",
+            "specifications": [
+              {
+                "label": "Product Name",
+                "value": "Spectacle Flanges"
+              },
+              {
+                "label": "Pressure Class",
+                "value": "Class 150 to Class 2500"
+              }
+            ],
+            "status": "published"
+          },
+          {
+            "id": "dcdeefe7-9833-43e1-95e2-4957c92f6214",
+            "title": "ANSI Flanges",
+            "description": "Our ANSI flange range includes slip-on, weld neck, lap joint, blind, threaded and socket weld types. Flanges are supplied as forgings unless otherwise specified.",
+            "image": "/cms-assets/2471aac2b40f9227.jpg",
+            "imageAlt": "ANSI Flanges",
+            "specifications": [
+              {
+                "label": "Product Name",
+                "value": "ANSI Flanges"
+              },
+              {
+                "label": "Pressure Class",
+                "value": "Class 150 to Class 2500"
+              }
+            ],
+            "status": "published"
+          },
+          {
+            "id": "34c59e72-7604-418d-9c06-5cc669c3f475",
+            "title": "Reducing Flanges & Long Weld Neck Flanges",
+            "description": "Reducing flanges connect pipes of different sizes, with weld neck, slip-on and threaded options. Long weld neck flanges provide an extended connection, with special bores and custom variations available on request.",
+            "image": "/cms-assets/a970bc50d4bf1add.jpg",
+            "imageAlt": "Reducing Flanges & Long Weld Neck Flanges",
+            "specifications": [
+              {
+                "label": "Product Name",
+                "value": "Reducing and Long Weld Neck Flanges"
+              },
+              {
+                "label": "Types",
+                "value": "Weld neck, slip-on and threaded reducing flanges"
+              }
+            ],
+            "status": "published"
+          }
+        ]
+      }
+    },
+    {
+      "key": "fitting_products",
+      "name": "Fitting products",
+      "slug": "/our-products/fittings",
+      "definition": {
+        "title": "Fitting products",
+        "websitePath": "/our-products/fittings",
+        "fields": [
+          {
+            "key": "seo",
+            "label": "Search engine details",
+            "type": "group",
+            "fields": [
+              {
+                "key": "title",
+                "label": "Page title",
+                "type": "text"
+              },
+              {
+                "key": "description",
+                "label": "Search description",
+                "type": "longText"
+              }
+            ]
+          },
+          {
+            "key": "headings",
+            "label": "Headings",
+            "type": "group",
+            "fields": [
+              {
+                "key": "item1",
+                "label": "Fittings",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "key": "items",
+            "label": "Products",
+            "type": "collection",
+            "fields": [
+              {
+                "key": "id",
+                "label": "ID",
+                "type": "text"
+              },
+              {
+                "key": "title",
+                "label": "Product title",
+                "type": "text",
+                "required": true
+              },
+              {
+                "key": "description",
+                "label": "Description",
+                "type": "longText",
+                "required": true
+              },
+              {
+                "key": "image",
+                "label": "Image",
+                "type": "image",
+                "required": true
+              },
+              {
+                "key": "imageAlt",
+                "label": "Image description",
+                "type": "text",
+                "required": true
+              },
+              {
+                "key": "specifications",
+                "label": "Specifications",
+                "type": "collection",
+                "fields": [
+                  {
+                    "key": "label",
+                    "label": "Specification",
+                    "type": "text",
+                    "required": true
+                  },
+                  {
+                    "key": "value",
+                    "label": "Value",
+                    "type": "text",
+                    "required": true
+                  }
+                ]
+              },
+              {
+                "key": "status",
+                "label": "Publication",
+                "type": "select",
+                "required": true,
+                "options": ["draft", "published"]
+              }
+            ]
+          }
+        ],
+        "editor": {
+          "type": "collection",
+          "field": "items",
+          "titleField": "title",
+          "statusField": "status"
+        }
+      },
+      "content": {
+        "seo": {
+          "title": "Fittings - HYS FLANGES CO. LTD",
+          "description": "HYS Flanges Co. Ltd specializes in producing high-quality flanges and fittings for industrial applications worldwide."
+        },
+        "headings": {
+          "item1": "Fittings"
+        },
+        "items": [
+          {
+            "id": "3c4639e4-7784-48c1-a52b-13f1480fdc64",
+            "title": "Fittings",
+            "description": "HYS Flanges Co. Ltd produces fittings for connecting, directing and adapting industrial piping systems. Our range includes elbows, tees, reducers and end caps for a variety of applications.",
+            "image": "/cms-assets/7c6555d8554af9d9.jpg",
+            "imageAlt": "Fittings",
+            "specifications": [
+              {
+                "label": "Product Name",
+                "value": "Pipe Fittings"
+              },
+              {
+                "label": "Brand",
+                "value": "HYS Flanges"
+              },
+              {
+                "label": "Product Range",
+                "value": "Long radius elbows, short radius elbows, equal tees, reducing tees, reducers and end caps"
+              },
+              {
+                "label": "Applications",
+                "value": "Oil and gas, refining, power generation, chemical processing and general industrial piping"
+              }
+            ],
+            "status": "published"
+          }
+        ]
+      }
+    },
+    {
+      "key": "catalogue_page",
+      "name": "Catalogue page",
+      "slug": "/catalogue",
+      "definition": {
+        "title": "Catalogue page",
+        "websitePath": "/catalogue",
+        "fields": [
+          {
+            "key": "seo",
+            "label": "Search engine details",
+            "type": "group",
+            "fields": [
+              {
+                "key": "title",
+                "label": "Page title",
+                "type": "text"
+              },
+              {
+                "key": "description",
+                "label": "Search description",
+                "type": "longText"
+              }
+            ]
+          },
+          {
+            "key": "headings",
+            "label": "Headings",
+            "type": "group",
+            "fields": [
+              {
+                "key": "item1",
+                "label": "CATALOGUE",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "content": {
+        "seo": {
+          "title": "Catalogue - HYS FLANGES CO. LTD",
+          "description": "HYS Flanges Co. Ltd specializes in producing high-quality flanges and fittings for industrial applications worldwide."
+        },
+        "headings": {
+          "item1": "CATALOGUE"
+        }
+      }
+    },
+    {
+      "key": "flange_catalogue",
+      "name": "Flange catalogue",
+      "slug": "/catalogue/flanges",
+      "definition": {
+        "title": "Flange catalogue",
+        "websitePath": "/catalogue/flanges",
+        "fields": [
+          {
+            "key": "seo",
+            "label": "Search engine details",
+            "type": "group",
+            "fields": [
+              {
+                "key": "title",
+                "label": "Page title",
+                "type": "text"
+              },
+              {
+                "key": "description",
+                "label": "Search description",
+                "type": "longText"
+              }
+            ]
+          },
+          {
+            "key": "headings",
+            "label": "Headings",
+            "type": "group",
+            "fields": [
+              {
+                "key": "item1",
+                "label": "FLANGES",
+                "type": "text"
+              },
+              {
+                "key": "item2",
+                "label": "HYS FLANGES",
+                "type": "text"
+              },
+              {
+                "key": "item3",
+                "label": "Product Description:",
+                "type": "text"
+              },
+              {
+                "key": "item4",
+                "label": "BRAND: HYS FLANGES\nOur flanges are available with mill test ce\u2026",
+                "type": "text"
+              },
+              {
+                "key": "item5",
+                "label": "Our flange range includes:\n1. JIS B2220 FLANGE \u2013 5K, 10K, 16K,\u2026",
+                "type": "text"
+              },
+              {
+                "key": "item6",
+                "label": "ASME ORIFICE FLANGES",
+                "type": "text"
+              },
+              {
+                "key": "item7",
+                "label": "Product Description:",
+                "type": "text"
+              },
+              {
+                "key": "item8",
+                "label": "Orifice flanges are used with orifice meters to measure the fl\u2026",
+                "type": "text"
+              },
+              {
+                "key": "item9",
+                "label": "Spectacle Flanges",
+                "type": "text"
+              },
+              {
+                "key": "item10",
+                "label": "Product Description:",
+                "type": "text"
+              },
+              {
+                "key": "item11",
+                "label": "Class 150 to Class 2500 Spectacle Flanges\nA spectacle flange c\u2026",
+                "type": "text"
+              },
+              {
+                "key": "item12",
+                "label": "ANSI Flange Pressure Classes",
+                "type": "text"
+              },
+              {
+                "key": "item13",
+                "label": "Product Description:",
+                "type": "text"
+              },
+              {
+                "key": "item14",
+                "label": "HYS Flanges Co. Ltd offers ANSI flanges in pressure classes fr\u2026",
+                "type": "text"
+              },
+              {
+                "key": "item15",
+                "label": "The ANSI flange specifications cover slip-on, weld neck, lap j\u2026",
+                "type": "text"
+              },
+              {
+                "key": "item16",
+                "label": "Reducing Flanges & Long Weld Neck Flanges",
+                "type": "text"
+              },
+              {
+                "key": "item17",
+                "label": "Product Description:",
+                "type": "text"
+              },
+              {
+                "key": "item18",
+                "label": "Reducing flanges connect pipes of different sizes. Available t\u2026",
+                "type": "text"
+              },
+              {
+                "key": "item19",
+                "label": "Long weld neck flanges provide an extended connection where ad\u2026",
+                "type": "text"
+              },
+              {
+                "key": "item20",
+                "label": "Material grades: A182-304 and F304-304.",
+                "type": "text"
+              },
+              {
+                "key": "item21",
+                "label": "KS & JIS Flanges",
+                "type": "text"
+              },
+              {
+                "key": "item22",
+                "label": "Product Description:",
+                "type": "text"
+              },
+              {
+                "key": "item23",
+                "label": "HYS Flanges Co. Ltd offers flanges in pressure ratings of 5K, \u2026",
+                "type": "text"
+              },
+              {
+                "key": "item24",
+                "label": "JIS product range: 5K to 40K.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "key": "images",
+            "label": "Page images",
+            "type": "group",
+            "fields": [
+              {
+                "key": "image1",
+                "label": "Flange catalogue image 1",
+                "type": "group",
+                "fields": [
+                  {
+                    "key": "image",
+                    "label": "Image",
+                    "type": "image",
+                    "required": true
+                  },
+                  {
+                    "key": "imageAlt",
+                    "label": "Image description",
+                    "type": "text",
+                    "required": true
+                  }
+                ]
+              },
+              {
+                "key": "image2",
+                "label": "Flange catalogue image 2",
+                "type": "group",
+                "fields": [
+                  {
+                    "key": "image",
+                    "label": "Image",
+                    "type": "image",
+                    "required": true
+                  },
+                  {
+                    "key": "imageAlt",
+                    "label": "Image description",
+                    "type": "text",
+                    "required": true
+                  }
+                ]
+              },
+              {
+                "key": "image3",
+                "label": "Flange catalogue image 3",
+                "type": "group",
+                "fields": [
+                  {
+                    "key": "image",
+                    "label": "Image",
+                    "type": "image",
+                    "required": true
+                  },
+                  {
+                    "key": "imageAlt",
+                    "label": "Image description",
+                    "type": "text",
+                    "required": true
+                  }
+                ]
+              },
+              {
+                "key": "image4",
+                "label": "Flange catalogue image 4",
+                "type": "group",
+                "fields": [
+                  {
+                    "key": "image",
+                    "label": "Image",
+                    "type": "image",
+                    "required": true
+                  },
+                  {
+                    "key": "imageAlt",
+                    "label": "Image description",
+                    "type": "text",
+                    "required": true
+                  }
+                ]
+              },
+              {
+                "key": "image5",
+                "label": "Flange catalogue image 5",
+                "type": "group",
+                "fields": [
+                  {
+                    "key": "image",
+                    "label": "Image",
+                    "type": "image",
+                    "required": true
+                  },
+                  {
+                    "key": "imageAlt",
+                    "label": "Image description",
+                    "type": "text",
+                    "required": true
+                  }
+                ]
+              },
+              {
+                "key": "image6",
+                "label": "Flange catalogue image 6",
+                "type": "group",
+                "fields": [
+                  {
+                    "key": "image",
+                    "label": "Image",
+                    "type": "image",
+                    "required": true
+                  },
+                  {
+                    "key": "imageAlt",
+                    "label": "Image description",
+                    "type": "text",
+                    "required": true
+                  }
+                ]
+              },
+              {
+                "key": "image7",
+                "label": "Flange catalogue image 7",
+                "type": "group",
+                "fields": [
+                  {
+                    "key": "image",
+                    "label": "Image",
+                    "type": "image",
+                    "required": true
+                  },
+                  {
+                    "key": "imageAlt",
+                    "label": "Image description",
+                    "type": "text",
+                    "required": true
+                  }
+                ]
+              },
+              {
+                "key": "image8",
+                "label": "Flange catalogue image 8",
+                "type": "group",
+                "fields": [
+                  {
+                    "key": "image",
+                    "label": "Image",
+                    "type": "image",
+                    "required": true
+                  },
+                  {
+                    "key": "imageAlt",
+                    "label": "Image description",
+                    "type": "text",
+                    "required": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "buttons",
+            "label": "Button labels",
+            "type": "group",
+            "fields": [
+              {
+                "key": "button1",
+                "label": "Back",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "content": {
+        "seo": {
+          "title": "Flanges - HYS FLANGES CO. LTD",
+          "description": "HYS Flanges Co. Ltd specializes in producing high-quality flanges and fittings for industrial applications worldwide."
+        },
+        "headings": {
+          "item1": "FLANGES",
+          "item2": "HYS FLANGES",
+          "item3": "Product Description:",
+          "item4": "BRAND: HYS FLANGES\nOur flanges are available with mill test certification upon request.",
+          "item5": "Our flange range includes:\n1. JIS B2220 FLANGE \u2013 5K, 10K, 16K, 20K, 30K, 40K, TYPES OF PLFF, PLRF, BLIND, HUB ETC.\n2. ANSI B16.5 FLANGE \u2013 150LB, 300LB, 600LB, TYPES OF PLFF, PLRF, BLIND, SORF, WNRF, NPT ETC.\n3. DIN FLANGE \u2013 PN6, PN10, PN16, PN25, PN40, PN64, TYPES OF PLFF, PLRF, BLIND, WNRF ETC.\n4. BS 4504 FLANGE \u2013 PN6, PN10, PN16, PLFF, PLRF, TYPES OF PLRF, BLIND, SORF, WNRF, BSPT ETC.\n5. BS 10 FLANGE \u2013 TABLE D, TABLE E, TABLE F ETC.",
+          "item6": "ASME ORIFICE FLANGES",
+          "item7": "Product Description:",
+          "item8": "Orifice flanges are used with orifice meters to measure the flow of liquids or gases in pipelines. Pressure tapping points are machined into the flange, eliminating the need for separate tapping in the pipe wall.",
+          "item9": "Spectacle Flanges",
+          "item10": "Product Description:",
+          "item11": "Class 150 to Class 2500 Spectacle Flanges\nA spectacle flange consists of two metal discs connected by a small section of steel. It is used in piping systems that require regular isolation or interruption of flow.",
+          "item12": "ANSI Flange Pressure Classes",
+          "item13": "Product Description:",
+          "item14": "HYS Flanges Co. Ltd offers ANSI flanges in pressure classes from Class 150 to Class 2500.",
+          "item15": "The ANSI flange specifications cover slip-on, weld neck, lap joint, blind, threaded and socket weld flanges. These flanges are supplied as forgings unless otherwise specified.",
+          "item16": "Reducing Flanges & Long Weld Neck Flanges",
+          "item17": "Product Description:",
+          "item18": "Reducing flanges connect pipes of different sizes. Available types include weld neck, slip-on and threaded reducing flanges, providing an economical transition between pipe sizes.",
+          "item19": "Long weld neck flanges provide an extended connection where additional length is required. Standard lengths, special bores, contoured bases and other custom variations are available on request.",
+          "item20": "Material grades: A182-304 and F304-304.",
+          "item21": "KS & JIS Flanges",
+          "item22": "Product Description:",
+          "item23": "HYS Flanges Co. Ltd offers flanges in pressure ratings of 5K, 10K, 16K, 20K and 30K.",
+          "item24": "JIS product range: 5K to 40K."
+        },
+        "images": {
+          "image1": {
+            "image": "/cms-assets/150579c8c8133e22.jpg",
+            "imageAlt": "Flange catalogue image 1"
+          },
+          "image2": {
+            "image": "/cms-assets/8737fe048d616b59.jpg",
+            "imageAlt": "Flange catalogue image 2"
+          },
+          "image3": {
+            "image": "/cms-assets/c298e8a8adc4b6d8.jpg",
+            "imageAlt": "Flange catalogue image 3"
+          },
+          "image4": {
+            "image": "/cms-assets/994b16576f0d4e60.jpg",
+            "imageAlt": "Flange catalogue image 4"
+          },
+          "image5": {
+            "image": "/cms-assets/4114020837f692db.jpg",
+            "imageAlt": "Flange catalogue image 5"
+          },
+          "image6": {
+            "image": "/cms-assets/626ead697896695e.jpg",
+            "imageAlt": "Flange catalogue image 6"
+          },
+          "image7": {
+            "image": "/cms-assets/2471aac2b40f9227.jpg",
+            "imageAlt": "Flange catalogue image 7"
+          },
+          "image8": {
+            "image": "/cms-assets/a970bc50d4bf1add.jpg",
+            "imageAlt": "Flange catalogue image 8"
+          }
+        },
+        "buttons": {
+          "button1": "Back"
+        }
+      }
+    },
+    {
+      "key": "fitting_catalogue",
+      "name": "Fitting technical sheets",
+      "slug": "/catalogue/fittings",
+      "definition": {
+        "title": "Fitting technical sheets",
+        "websitePath": "/catalogue/fittings",
+        "fields": [
+          {
+            "key": "seo",
+            "label": "Search engine details",
+            "type": "group",
+            "fields": [
+              {
+                "key": "title",
+                "label": "Page title",
+                "type": "text"
+              },
+              {
+                "key": "description",
+                "label": "Search description",
+                "type": "longText"
+              }
+            ]
+          },
+          {
+            "key": "headings",
+            "label": "Headings",
+            "type": "group",
+            "fields": [
+              {
+                "key": "item1",
+                "label": "FITTINGS",
+                "type": "text"
+              },
+              {
+                "key": "item2",
+                "label": "Fittings Technical Sheets",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "key": "copy",
+            "label": "Page text",
+            "type": "group",
+            "fields": [
+              {
+                "key": "item1",
+                "label": "Technical catalogue",
+                "type": "longText"
+              },
+              {
+                "key": "item2",
+                "label": "Browse each technical sheet using the page controls, zoom, thu\u2026",
+                "type": "longText"
+              }
+            ]
+          },
+          {
+            "key": "buttons",
+            "label": "Button labels",
+            "type": "group",
+            "fields": [
+              {
+                "key": "button1",
+                "label": "Back",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "key": "documents",
+            "label": "Technical sheets",
+            "type": "collection",
+            "fields": [
+              {
+                "key": "id",
+                "label": "ID",
+                "type": "text"
+              },
+              {
+                "key": "title",
+                "label": "Sheet title",
+                "type": "text",
+                "required": true
+              },
+              {
+                "key": "url",
+                "label": "PDF document",
+                "type": "pdf",
+                "required": true
+              },
+              {
+                "key": "status",
+                "label": "Publication",
+                "type": "select",
+                "required": true,
+                "options": ["draft", "published"]
+              }
+            ]
+          }
+        ],
+        "editor": {
+          "type": "collection",
+          "field": "documents",
+          "titleField": "title",
+          "statusField": "status"
+        }
+      },
+      "content": {
+        "seo": {
+          "title": "Fittings - HYS FLANGES CO. LTD",
+          "description": "HYS Flanges Co. Ltd specializes in producing high-quality flanges and fittings for industrial applications worldwide."
+        },
+        "headings": {
+          "item1": "FITTINGS",
+          "item2": "Fittings Technical Sheets"
+        },
+        "copy": {
+          "item1": "Technical catalogue",
+          "item2": "Browse each technical sheet using the page controls, zoom, thumbnails and fullscreen view."
+        },
+        "buttons": {
+          "button1": "Back"
+        },
+        "documents": [
+          {
+            "id": "76cd0bab-70d5-444c-b78a-8df6b62a4703",
+            "title": "Long Radius Elbow",
+            "url": "https://hysflanges.vercel.app/media/catalogues/fittings/lr-elbow.pdf",
+            "status": "published"
+          },
+          {
+            "id": "46f11067-ccca-4d72-9c13-0e0a3b46cba4",
+            "title": "Short Radius Elbow",
+            "url": "https://hysflanges.vercel.app/media/catalogues/fittings/sr-elbow.pdf",
+            "status": "published"
+          },
+          {
+            "id": "357812c8-bda4-4bfe-8054-841e92a8b400",
+            "title": "Equal Tee",
+            "url": "https://hysflanges.vercel.app/media/catalogues/fittings/equal-tee.pdf",
+            "status": "published"
+          },
+          {
+            "id": "013f6f6c-c16c-46dc-b6f6-db342e18cba0",
+            "title": "Reducing Tee",
+            "url": "https://hysflanges.vercel.app/media/catalogues/fittings/reducing-tee.pdf",
+            "status": "published"
+          },
+          {
+            "id": "26bb4990-588d-4a9e-9bd4-da2d8884f16d",
+            "title": "End Caps",
+            "url": "https://hysflanges.vercel.app/media/catalogues/fittings/caps.pdf",
+            "status": "published"
+          },
+          {
+            "id": "d743c922-771e-4458-81c6-4363dfcf7bf8",
+            "title": "Reducers",
+            "url": "https://hysflanges.vercel.app/media/catalogues/fittings/reducers.pdf",
+            "status": "published"
+          }
+        ]
+      }
+    },
+    {
+      "key": "videos",
+      "name": "Videos",
+      "slug": "/videos",
+      "definition": {
+        "title": "Videos",
+        "websitePath": "/videos",
+        "fields": [
+          {
+            "key": "seo",
+            "label": "Search engine details",
+            "type": "group",
+            "fields": [
+              {
+                "key": "title",
+                "label": "Page title",
+                "type": "text"
+              },
+              {
+                "key": "description",
+                "label": "Search description",
+                "type": "longText"
+              }
+            ]
+          },
+          {
+            "key": "headings",
+            "label": "Headings",
+            "type": "group",
+            "fields": [
+              {
+                "key": "item1",
+                "label": "Videos",
+                "type": "text"
+              },
+              {
+                "key": "item2",
+                "label": "HYS Flanges (Korea)",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "key": "images",
+            "label": "Page images",
+            "type": "group",
+            "fields": [
+              {
+                "key": "image1",
+                "label": "Videos image 1",
+                "type": "group",
+                "fields": [
+                  {
+                    "key": "image",
+                    "label": "Image",
+                    "type": "image",
+                    "required": true
+                  },
+                  {
+                    "key": "imageAlt",
+                    "label": "Image description",
+                    "type": "text",
+                    "required": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "videoUrl",
+            "label": "Video URL (HTTPS MP4)",
+            "type": "url",
+            "required": true
+          }
+        ]
+      },
+      "content": {
+        "seo": {
+          "title": "Videos - HYS FLANGES CO. LTD",
+          "description": "HYS Flanges Co. Ltd specializes in producing high-quality flanges and fittings for industrial applications worldwide."
+        },
+        "headings": {
+          "item1": "Videos",
+          "item2": "HYS Flanges (Korea)"
+        },
+        "images": {
+          "image1": {
+            "image": "/cms-assets/88ce71ade1bfd10b.jpg",
+            "imageAlt": "Videos image 1"
+          }
+        },
+        "videoUrl": "https://hysflanges.vercel.app/media/hys-company-2026.mp4"
+      }
+    },
+    {
+      "key": "contact",
+      "name": "Contact page",
+      "slug": "/contact-us",
+      "definition": {
+        "title": "Contact page",
+        "websitePath": "/contact-us",
+        "fields": [
+          {
+            "key": "seo",
+            "label": "Search engine details",
+            "type": "group",
+            "fields": [
+              {
+                "key": "title",
+                "label": "Page title",
+                "type": "text"
+              },
+              {
+                "key": "description",
+                "label": "Search description",
+                "type": "longText"
+              }
+            ]
+          },
+          {
+            "key": "headings",
+            "label": "Headings",
+            "type": "group",
+            "fields": [
+              {
+                "key": "item1",
+                "label": "CONTACT US",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "key": "copy",
+            "label": "Page text",
+            "type": "group",
+            "fields": [
+              {
+                "key": "eyebrow",
+                "label": "Contact information label",
+                "type": "text"
+              },
+              {
+                "key": "intro",
+                "label": "Contact introduction",
+                "type": "longText"
+              },
+              {
+                "key": "heading",
+                "label": "Contact heading",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "content": {
+        "seo": {
+          "title": "Contact Us - HYS FLANGES CO. LTD",
+          "description": "HYS Flanges Co. Ltd specializes in producing high-quality flanges and fittings for industrial applications worldwide."
+        },
+        "headings": {
+          "item1": "CONTACT US"
+        },
+        "copy": {
+          "eyebrow": "Contact information",
+          "intro": "Contact HYS Flanges Co. Ltd or our main distributor for product and sales enquiries.",
+          "heading": "Get in touch"
+        }
+      }
+    }
+  ]
+}
