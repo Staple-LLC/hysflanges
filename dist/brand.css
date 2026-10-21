@@ -1,0 +1,149 @@
+.hys-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: .85rem;
+  color: #fff;
+  font-family: "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  font-size: clamp(1.45rem, 2.25vw, 2rem);
+  font-stretch: condensed;
+  font-weight: 800;
+  letter-spacing: .015em;
+  line-height: .95;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.hys-brand img {
+  display: block;
+  width: 50px !important;
+  height: 72px !important;
+  object-fit: contain;
+  flex: 0 0 auto;
+}
+
+@media (max-width: 1100px) {
+  .hys-brand { gap: .65rem; font-size: 1.35rem; }
+  .hys-brand img { width: 41px !important; height: 60px !important; }
+}
+
+@media (max-width: 921px) {
+  .hys-brand { gap: .55rem; font-size: 1.15rem; }
+  .hys-brand img { width: 35px !important; height: 50px !important; }
+}
+
+@media (max-width: 544px) {
+  .hys-brand { gap: .45rem; font-size: .92rem; letter-spacing: 0; }
+  .hys-brand img { width: 29px !important; height: 42px !important; }
+}
+
+.hys-product-copy {
+  padding: 1rem 1.5rem 3.5rem;
+}
+
+.hys-product-copy-inner {
+  max-width: 1140px;
+  margin: 0 auto;
+  color: #333;
+  line-height: 1.75;
+}
+
+.hys-product-copy h3 {
+  margin: 0 0 .75rem;
+  color: #153d78;
+  font-size: 1.35rem;
+}
+
+
+/* Fittings technical catalogue */
+.hys-pdf-catalogue { padding: 3.5rem 1.5rem 4.5rem; background: linear-gradient(180deg, #f5f8fc 0%, #ffffff 100%); }
+.hys-pdf-catalogue-inner { width: min(1140px, 100%); margin: 0 auto; }
+.hys-pdf-eyebrow { margin: 0 0 .35rem; color: #3978bd; font-size: .78rem; font-weight: 800; letter-spacing: .13em; text-align: center; text-transform: uppercase; }
+.hys-pdf-catalogue h2 { margin: 0; color: #143b70; font-size: clamp(1.8rem, 4vw, 2.55rem); text-align: center; }
+.hys-pdf-intro { max-width: 690px; margin: .8rem auto 2.25rem; color: #526174; line-height: 1.7; text-align: center; }
+.hys-pdf-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; }
+.hys-pdf-card { overflow: hidden; border: 1px solid #dce5ef; border-radius: 12px; background: #fff; box-shadow: 0 12px 28px rgba(19, 54, 94, .09); transition: transform .2s ease, box-shadow .2s ease; }
+.hys-pdf-card:hover { transform: translateY(-4px); box-shadow: 0 18px 38px rgba(19, 54, 94, .14); }
+.hys-pdf-preview { display: block; height: 260px; padding: 1rem; background: #edf2f7; }
+.hys-pdf-preview img { width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 5px 8px rgba(25, 49, 75, .14)); }
+.hys-pdf-card-body { padding: 1.25rem; }
+.hys-pdf-card h2 { margin: 0; color: #173f73; font-size: 1.25rem; text-align: left; }
+.hys-pdf-card p { margin: .35rem 0 1rem; color: #68778a; }
+.hys-pdf-actions { display: flex; gap: .65rem; }
+.hys-pdf-actions a { flex: 1; padding: .65rem .75rem; border: 1px solid #3978bd; border-radius: 6px; color: #3978bd; font-size: .9rem; font-weight: 700; text-align: center; text-decoration: none; }
+.hys-pdf-actions a:first-child { background: #3978bd; color: #fff; }
+.hys-pdf-actions a:hover { background: #245b96; border-color: #245b96; color: #fff; }
+@media (max-width: 900px) { .hys-pdf-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .hys-pdf-catalogue { padding: 2.5rem 1rem 3rem; } .hys-pdf-grid { grid-template-columns: 1fr; } .hys-pdf-preview { height: 230px; } }
+
+
+/* Embedded fittings flipbooks */
+.hys-flipbook-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem 1.35rem; align-items: start; }
+.hys-flipbook-item { min-width: 0; }
+.hys-flipbook-item > h2 { min-height: 2.5rem; margin: 0 0 .7rem; color: #173f73; font-size: 1.15rem; text-align: center; }
+.hys-flipbook-shell { min-height: 490px; background: #fff; box-shadow: 0 10px 28px rgba(19, 54, 94, .10); }
+.hys-flipbook-shell .df-container { min-height: 490px !important; }
+.hys-flipbook-item > p { margin: .8rem 0 0; text-align: center; }
+.hys-pdf-download { display: inline-block; padding: .55rem .9rem; border: 1px solid #3978bd; border-radius: 5px; color: #3978bd; font-weight: 700; text-decoration: none; }
+.hys-pdf-download:hover { background: #3978bd; color: #fff; }
+@media (max-width: 980px) { .hys-flipbook-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 650px) { .hys-flipbook-grid { grid-template-columns: 1fr; } .hys-flipbook-shell, .hys-flipbook-shell .df-container { min-height: 460px !important; } }
+
+/* Compact three-across catalogue layout */
+.hys-flipbook-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2.25rem 1.5rem; }
+.hys-flipbook-item > h2 { min-height: 2.8rem; display: flex; align-items: center; justify-content: center; }
+.hys-flipbook-shell,
+.hys-flipbook-shell .df-container { height: 400px !important; min-height: 400px !important; }
+.hys-flipbook-item > p { margin-top: .65rem; }
+@media (max-width: 760px) {
+  .hys-flipbook-grid { grid-template-columns: 1fr; max-width: 430px; margin-inline: auto; }
+  .hys-flipbook-shell,
+  .hys-flipbook-shell .df-container { height: 430px !important; min-height: 430px !important; }
+}
+
+
+/* Contact details page */
+.hys-contact-details { padding: 4rem 1.5rem 5rem; background: linear-gradient(180deg, #f5f8fc 0%, #fff 100%); }
+.hys-contact-details-inner { width: min(1140px, 100%); margin: 0 auto; }
+.hys-contact-eyebrow { margin: 0 0 .35rem; color: #3978bd; font-size: .78rem; font-weight: 800; letter-spacing: .13em; text-align: center; text-transform: uppercase; }
+.hys-contact-details h2 { margin: 0; color: #143b70; font-size: clamp(2rem, 4vw, 2.65rem); text-align: center; }
+.hys-contact-intro { max-width: 700px; margin: .75rem auto 2.25rem; color: #526174; line-height: 1.7; text-align: center; }
+.hys-contact-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; }
+.hys-contact-card { padding: 1.65rem; border: 1px solid #dce5ef; border-radius: 12px; background: #fff; box-shadow: 0 12px 28px rgba(19,54,94,.08); }
+.hys-contact-card h3 { margin: .2rem 0 .8rem; color: #173f73; font-size: 1.25rem; font-weight: 700; }
+.hys-contact-card h3 small { font-size: .78em; }
+.hys-contact-card p, .hys-contact-card address { margin: 0; color: #49596d; font-style: normal; line-height: 1.75; }
+.hys-contact-card a { color: #245f9d; font-weight: 700; text-decoration: none; }
+.hys-contact-card a:hover { text-decoration: underline; }
+.hys-contact-role { color: #3978bd !important; font-size: .75rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+.hys-contact-website-card { display: flex; align-items: center; justify-content: space-between; gap: 1.25rem; }
+.hys-contact-website-card img { display: block; width: 120px; height: 120px; }
+@media (max-width: 720px) { .hys-contact-grid { grid-template-columns: 1fr; } .hys-contact-details { padding: 3rem 1rem 4rem; } }
+
+/* Product pages: photographs and descriptions, without catalogue viewers. */
+.hys-product-details {max-width:1140px;margin:0 auto;padding:55px 24px 65px;}
+.hys-product-details>h1 {color:#0107a4;text-align:center;font-size:2.2rem;margin:0 0 45px;}
+.hys-product-detail {margin-bottom:70px;}
+.hys-product-detail>h2 {color:#0107a4;text-align:center;font-size:1.65rem;margin:0 0 20px;}
+.hys-product-rule {display:flex;align-items:center;gap:12px;margin-bottom:38px;color:#0107a4;}
+.hys-product-rule:before,.hys-product-rule:after {content:"";height:1px;background:#aaa;flex:1;}
+.hys-product-rule span {display:grid;place-items:center;border-radius:50%;background:#0107a4;color:white;width:25px;height:25px;font-size:20px;}
+.hys-product-columns {display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:65px;align-items:start;}
+.hys-product-columns figure {margin:0;text-align:center;}
+.hys-product-columns figure img {width:100%;height:330px;object-fit:contain;border-radius:5px;}
+.hys-product-columns figcaption {font-size:1.15rem;margin-top:12px;font-weight:700;}
+.hys-product-description h3 {color:#0107a4;font-size:1.3rem;margin:0 0 18px;}
+.hys-product-description p {font-weight:400;line-height:1.7;font-size:.9rem;}
+.hys-product-description table {width:100%;border-collapse:collapse;font-size:.85rem;line-height:1.6;}
+.hys-product-description th,.hys-product-description td {border:1px solid #ddd;padding:14px 17px;text-align:left;vertical-align:top;font-weight:400;}
+.hys-product-description th {width:34%;font-weight:600;}
+.hys-product-back a {display:inline-block;background:#0107a4;color:#fff;padding:12px 22px;font-size:.85rem;}
+@media(max-width:760px){.hys-product-details{padding:35px 20px;}.hys-product-columns{grid-template-columns:1fr;gap:28px;}.hys-product-columns figure img{height:270px;}.hys-product-detail{margin-bottom:50px;}}
+
+/* Reserve the PDF toolbar space inside each catalogue grid item. */
+.hys-flipbook-grid { row-gap: 3rem; }
+.hys-flipbook-shell { box-sizing: content-box; height: auto !important; min-height: 0 !important; padding-bottom: 65px; }
+.hys-flipbook-shell .df-container:not(.df-fullscreen) { height: 400px !important; min-height: 0 !important; }
+.hys-flipbook-item { display: flex; flex-direction: column; }
+@media (max-width: 760px) {
+ .hys-flipbook-shell .df-container:not(.df-fullscreen) { height: 400px !important; min-height: 0 !important; }
+}

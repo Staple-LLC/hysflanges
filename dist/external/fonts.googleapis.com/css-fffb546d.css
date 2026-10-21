@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'Be Vietnam';
+  font-style: normal;
+  font-weight: 400;
+  font-display: fallback;
+  src: url(/external/fonts.gstatic.com/s/bevietnam/v10/FBVzdDflz-iPfoPuIC2iIqYn7Q.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Be Vietnam';
+  font-style: normal;
+  font-weight: 600;
+  font-display: fallback;
+  src: url(/external/fonts.gstatic.com/s/bevietnam/v10/FBVwdDflz-iPfoPuIC2iKnkD_UBFIw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Be Vietnam';
+  font-style: normal;
+  font-weight: 700;
+  font-display: fallback;
+  src: url(/external/fonts.gstatic.com/s/bevietnam/v10/FBVwdDflz-iPfoPuIC2iKh0C_UBFIw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lexend';
+  font-style: normal;
+  font-weight: 500;
+  font-display: fallback;
+  src: url(/external/fonts.gstatic.com/s/lexend/v26/wlptgwvFAVdoq2_F94zlCfv0bz1WCwkWzLdnfw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  font-display: fallback;
+  src: url(/external/fonts.gstatic.com/s/notosans/v42/o-0mIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjcz6L1SoM-jCpoiyAaBO9a6Vc.ttf) format('truetype');
+}
