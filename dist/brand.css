@@ -147,3 +147,52 @@
 @media (max-width: 760px) {
  .hys-flipbook-shell .df-container:not(.df-fullscreen) { height: 400px !important; min-height: 0 !important; }
 }
+
+/* Show the complete home photograph with navigation outside the image. */
+body.home #masthead, body.page-id-11 #masthead {position: relative !important;top: auto !important;}
+body.page-id-11 #masthead .ast-primary-header-bar {background: #1b2b43 !important;}
+.hys-home-hero {width: 100%;background: #eeeae4;text-align: center;}
+.hys-home-hero img {display: block;width: 100%;height: auto;max-height: none;object-fit: contain;margin: 0 auto;}
+
+.hys-about-photo {width: min(1140px, calc(100% - 40px));margin: 35px auto 45px;}
+.hys-about-photo img {display: block;width: 100%;height: auto;object-fit: contain;border-radius: 6px;}
+@media(max-width:600px){.hys-about-photo{width:calc(100% - 32px);margin:24px auto;}}
+
+/* About Us banner replaces the former hydraulic-tools background. */
+body.page-id-5134 #masthead {position:relative !important;top:auto !important;}
+body.page-id-5134 #masthead .ast-primary-header-bar {background:#1b2b43 !important;}
+.hys-about-hero {position:relative;width:100%;background:#dce0e4;}
+.hys-about-hero img {display:block;width:100%;height:auto;}
+.hys-about-hero h1 {position:absolute;top:6%;left:0;right:0;margin:0;text-align:center;color:#17355a;font-size:clamp(1.25rem,3.5vw,3rem);font-weight:800;}
+
+/* Consistent panoramic banner on every main page. */
+body.hys-shared-banner-page #masthead {position:relative !important;top:auto !important;}
+body.hys-shared-banner-page #masthead .ast-primary-header-bar {background:#1b2b43 !important;}
+.hys-shared-hero {position:relative;width:100%;background:#dce0e4;}
+.hys-shared-hero img {display:block;width:100%;height:auto;max-height:none;}
+.hys-shared-hero h1 {position:absolute;top:6%;left:0;right:0;margin:0;text-align:center;color:#17355a;font-size:clamp(1.25rem,3.5vw,3rem);font-weight:800;}
+
+/* Home-page industries. */
+.hys-industries {padding:65px 24px 75px;background:#1c3c6b;}
+.hys-industries-inner {max-width:1140px;margin:0 auto;}
+.hys-industries h2 {color:#fff;text-align:center;font-size:clamp(1.6rem,3vw,2rem);margin:0;text-transform:uppercase;}
+.hys-industries-accent {width:40px;height:3px;background:#f7c52b;margin:18px auto 36px;}
+.hys-industries-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;}
+.hys-industry-card {overflow:hidden;background:#fff;border-radius:4px;box-shadow:0 10px 26px #0b214636;}
+.hys-industry-photo {aspect-ratio:1.6;background-image:url('/assets/industries-studio-triptych.png');background-repeat:no-repeat;background-size:300% auto;}
+.hys-industry-offshore {background-position:left center;}
+.hys-industry-marine {background-position:center center;}
+.hys-industry-chemical {background-position:right center;}
+.hys-industry-copy {padding:25px 24px 29px;}
+.hys-industry-copy h3 {color:#1c3c6b;font-size:1.05rem;line-height:1.45;margin:0 0 14px;}
+.hys-industry-copy p {color:#4f5763;font-size:.8rem;font-weight:400;line-height:1.8;margin:0;}
+@media(max-width:800px){.hys-industries-grid{grid-template-columns:1fr;max-width:520px;margin:0 auto;}.hys-industries{padding:45px 20px 50px;}}
+
+.hys-industry-power,.hys-industry-construction,.hys-industry-palm {background-image:url('/assets/industries-energy-construction-palm.png');}
+.hys-industry-power {background-position:left center;}
+.hys-industry-construction {background-position:center center;}
+.hys-industry-palm {background-position:right center;}
+
+
+
+.hys-industry-copy h3 {margin-bottom:0;}
