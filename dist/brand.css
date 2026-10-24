@@ -208,3 +208,6 @@ body.hys-shared-banner-page #masthead .ast-primary-header-bar {background:#1b2b4
 .hys-catalogue-links a:first-child {background:#17355a;color:#fff;}
 @media(max-width:1150px){.hys-featured-catalogue{margin:35px 24px;}}
 @media(max-width:650px){.hys-featured-catalogue{grid-template-columns:1fr;gap:25px;padding:24px;}.hys-catalogue-cover{max-width:200px;margin:auto;}}
+
+/* Display the HYS flange photograph in monochrome. */
+img[src="/wp-content/uploads/2021/06/FLANGE_2.jpg"] {filter:grayscale(100%);}
