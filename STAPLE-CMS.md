@@ -54,3 +54,16 @@ npm run dev
 Vite builds and serves `site/` on startup. Restart the development server after changing the CMS JSON. HLS segment serving is preserved. Keep `cms-onboarding.json`, `src/cms/bindings.json` and `src/cms/asset-manifest.json` under version control: they describe the schema, rendering bindings and imported images. Changes to template structure should update bindings and their regression tests together.
 
 Tests cover initial visual-markup preservation, safe text rendering, shared details, product additions and specifications, private/empty collections, PDF viewer/download synchronization, media ownership, video replacement, form recipient, QR regeneration and legacy redirects.
+
+### Search engine metadata
+
+`npm run build` generates SEO metadata for all ten active CMS pages, plus
+`site/sitemap.xml` and `site/robots.txt`. Titles and descriptions come from each
+page's CMS `seo` fields; organization details come from the shared company fields.
+Imported templates and legacy redirects remain unchanged.
+
+Canonical and social URLs use `https://hysflanges.vercel.app` by default (the
+onboarding origin). Set `SITE_URL=https://your-production-domain.com` in the
+hosting build environment when using a custom domain, then rebuild. Use the same
+public domain for the sitemap submitted to your search engine webmaster tools.
+Run `npm run test:cms` to check metadata, schema, sitemap and CMS rendering.

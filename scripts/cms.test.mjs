@@ -48,9 +48,11 @@ test("imports every active page, six products and six technical sheets with pack
     assert.ok(existsSync("dist" + asset));
   validateSnapshot(initial);
 });
-test("initial rollout preserves all ten HTML files byte for byte", () => {
+test("unchanged imported defaults preserve all ten HTML templates byte for byte", () => {
+  const baseline = fresh();
+  for (const section of onboarding.sections) baseline.pages[section.slug][section.key] = structuredClone(section.content);
   for (const file of new Set(bindings.filter((b) => b.file).map((b) => b.file)))
-    assert.equal(renderPage(html(file), file, initial), html(file));
+    assert.equal(renderPage(html(file), file, baseline), html(file));
 });
 test("renders homepage text and SEO changes without injecting HTML", () => {
   const s = fresh();
@@ -281,4 +283,41 @@ test("uploaded PDFs resolve in both the viewer and download link without a .pdf 
   const href = $(".hys-pdf-download").first().attr("href");
   assert.ok(href.includes("/website-published-media/" + onboarding.websiteId));
   assert.ok($(".df-shortcode-script").first().text().includes(href));
+});
+
+test("SEO build has consistent canonical URLs, crawl directives, CMS metadata and valid schema", () => {
+  const dir = mkdtempSync(path.join(tmpdir(), "hys-seo-test-"));
+  const previousOrigin = process.env.SITE_URL;
+  try {
+    process.env.SITE_URL = "https://example.com";
+    buildSite({ output: dir });
+    const titles = new Set(), descriptions = new Set();
+    for (const section of onboarding.sections.filter(s => s.content.seo)) {
+      const file = section.slug === "/" ? "index.html" : section.slug.slice(1) + "/index.html";
+      const $ = load(readFileSync(path.join(dir, file), "utf8"));
+      const canonical = "https://example.com" + (section.slug === "/" ? "/" : section.slug + "/");
+      assert.equal($("meta[name='robots']").length, 1);
+      assert.ok(!$("meta[name='robots']").attr("content").includes("noindex"));
+      assert.equal($("link[rel='canonical']").attr("href"), canonical);
+      assert.equal($("meta[property='og:url']").attr("content"), canonical);
+      assert.equal($("title").text(), readSection(initial, section.key).seo.title);
+      assert.equal($("meta[name='twitter:title']").attr("content"), $("title").text());
+      assert.match($("meta[property='og:image']").attr("content"), /^https:\/\//);
+      const schema = JSON.parse($("#site-seo").text());
+      assert.equal(schema['@graph'][3].url, canonical);
+      assert.ok(!$("#site-seo").text().includes("SearchAction"));
+      titles.add($("title").text());
+      descriptions.add($("meta[name='description']").attr("content"));
+    }
+    assert.equal(titles.size, 10);
+    assert.equal(descriptions.size, 10);
+    const sitemap = load(readFileSync(path.join(dir, "sitemap.xml"), "utf8"), { xmlMode: true });
+    assert.equal(sitemap("url").length, 10);
+    assert.ok(!sitemap("loc").text().includes("58-2"));
+    assert.match(readFileSync(path.join(dir, "robots.txt"), "utf8"), /Sitemap: https:\/\/example.com\/sitemap.xml/);
+  } finally {
+    if (previousOrigin === undefined) delete process.env.SITE_URL;
+    else process.env.SITE_URL = previousOrigin;
+    rmSync(dir, { recursive: true, force: true });
+  }
 });

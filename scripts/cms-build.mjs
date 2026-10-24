@@ -1,4 +1,5 @@
 import { load } from "cheerio";
+import { renderSeo, sitemap } from "./seo.mjs";
 import qrcode from "qrcode-generator";
 import {
   readFileSync,
@@ -415,11 +416,16 @@ export function buildSite({
   mkdirSync(output, { recursive: true });
   cpSync(path.join(root, "dist"), output, { recursive: true });
   const files = [...new Set(bindings.filter((b) => b.file).map((b) => b.file))];
+  const origin = new URL(https(process.env.SITE_URL || onboarding.origin)).origin;
+  const seoPages = new Map(onboarding.sections.filter(s => s.content.seo).map(s => [s.slug, readSection(snapshot, s.key).seo]));
+  const company = readSection(snapshot, "company_details");
   for (const file of files) {
     const source = readFileSync(path.join(root, "dist", file), "utf8");
-    writeFileSync(path.join(output, file), renderPage(source, file, snapshot));
+    const slug = file === "index.html" ? "/" : "/" + file.replace(/\/index\.html$/, "");
+    writeFileSync(path.join(output, file), renderSeo(renderPage(source, file, snapshot), slug, seoPages, company, origin));
   }
-  const company = readSection(snapshot, "company_details");
+  writeFileSync(path.join(output, "sitemap.xml"), sitemap(origin, [...seoPages.keys()]));
+  writeFileSync(path.join(output, "robots.txt"), `User-agent: *\nAllow: /\n\nSitemap: ${origin}/sitemap.xml\n`);
   if (company.website !== defaults.get("company_details").content.website) {
     const qr = qrcode(0, "M");
     qr.addData(https(company.website));
