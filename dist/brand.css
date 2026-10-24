@@ -196,3 +196,15 @@ body.hys-shared-banner-page #masthead .ast-primary-header-bar {background:#1b2b4
 
 
 .hys-industry-copy h3 {margin-bottom:0;}
+
+.hys-featured-catalogue {display:grid;grid-template-columns:220px minmax(0,1fr);gap:45px;align-items:center;max-width:1100px;margin:50px auto;padding:30px;background:#f4f7fb;border:1px solid #e0e7ef;border-radius:8px;}
+.hys-catalogue-cover img {display:block;width:100%;height:auto;box-shadow:0 8px 22px #17355a26;}
+.hys-featured-catalogue h2 {color:#17355a;font-size:1.6rem;margin:0 0 15px;}
+.hys-featured-catalogue p {font-size:.9rem;font-weight:400;line-height:1.7;}
+.hys-featured-catalogue .hys-catalogue-year {color:#3978bd;font-size:.7rem;font-weight:800;letter-spacing:.12em;margin:0 0 8px;}
+.hys-catalogue-meta {color:#64748b;}
+.hys-catalogue-links {display:flex;flex-wrap:wrap;gap:12px;}
+.hys-catalogue-links a {padding:11px 18px;border:1px solid #17355a;border-radius:4px;color:#17355a;font-size:.8rem;}
+.hys-catalogue-links a:first-child {background:#17355a;color:#fff;}
+@media(max-width:1150px){.hys-featured-catalogue{margin:35px 24px;}}
+@media(max-width:650px){.hys-featured-catalogue{grid-template-columns:1fr;gap:25px;padding:24px;}.hys-catalogue-cover{max-width:200px;margin:auto;}}
